@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Personaje</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let personaje of personajes">
+                <td>{{personaje.nombre}}</td>
+                <td>
+                    <img src={{personaje.imagen}} alt={{personaje.nombre}} style="width: 250px; height: 250px;" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
